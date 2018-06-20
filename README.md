@@ -1,1 +1,1 @@
-Learn from doing: [Let's Build a Simple Database](https://cstack.github.io/db_tutorial/).
+Learn by doing: [Let's Build a Simple Database](https://cstack.github.io/db_tutorial/).
