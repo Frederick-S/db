@@ -2,4 +2,6 @@ language: c
 os:
   - linux
   - osx
-script: make build
+script: 
+  - make build
+  - make test
