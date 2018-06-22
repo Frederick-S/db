@@ -2,6 +2,8 @@ language: c
 os:
   - linux
   - osx
+install:
+  - bundle install
 script: 
   - make build
   - make test
