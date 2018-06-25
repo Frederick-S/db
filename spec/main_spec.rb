@@ -8,7 +8,11 @@ describe "database" do
 
         IO.popen("./db test.db", "r+") do |pipe|
             commands.each do |command|
-                pipe.puts command
+                begin
+                    pipe.puts command
+                rescue Errno::EPIPE
+                    break
+                end
             end
 
             pipe.close_write
