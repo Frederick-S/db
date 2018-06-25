@@ -5,7 +5,7 @@ os:
 install:
   - bundle install
 script:
-  - export CC=/usr/local/clang-5.0.0/bin/clang
+  - export CC=$(which clang)
   - cmake .
   - make
   - make test
