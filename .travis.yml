@@ -8,4 +8,4 @@ script:
   - export CC=$(which clang)
   - cmake .
   - make
-  - make test
+  - make test CTEST_OUTPUT_ON_FAILURE=TRUE
