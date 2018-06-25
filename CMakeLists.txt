@@ -1,3 +1,7 @@
-cmake_minimum_required(VERSION 3.10.3)
+cmake_minimum_required(VERSION 3.0.0)
 project(db)
 add_executable(db db.c)
+add_test(
+        NAME db-test
+        COMMAND bundle exec rspec
+)

@@ -55,6 +55,7 @@ dkms.conf
 db
 *.db
 
+*.cbp
 CMakeCache.txt
 CMakeFiles
 CMakeScripts

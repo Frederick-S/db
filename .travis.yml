@@ -5,5 +5,5 @@ os:
 install:
   - bundle install
 script: 
-  - make build
+  - make
   - make test
