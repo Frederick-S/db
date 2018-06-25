@@ -213,7 +213,7 @@ void* get_page(Pager* pager, uint32_t page_num) {
 
         pager->pages[page_num] = page;
 
-        if (page_num > pager->num_pages) {
+        if (page_num >= pager->num_pages) {
             pager->num_pages = page_num + 1;
         }
     }
