@@ -70,7 +70,9 @@ describe "database" do
 
         result = run_script(script)
 
-        expect(result[-2]).to eq("db > Error: Table full.")
+        expect(result[-2]).to match_array([
+            "db > Executed."
+        ])
     end
 
     it "allows inserting strings that are maximum length" do
@@ -143,10 +145,10 @@ describe "database" do
             "db > Executed.",
             "db > Executed.",
             "db > Tree:",
-            "leaf (size 3)",
-            " - 0 : 1",
-            " - 1 : 2",
-            " - 2 : 3",
+            "- leaf (size 3)",
+            " - 1",
+            " - 2",
+            " - 3",
             "db > "
         ])
     end
