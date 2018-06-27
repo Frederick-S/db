@@ -71,7 +71,8 @@ describe "database" do
         result = run_script(script)
 
         expect(result.last(2)).to match_array([
-            "db > Executed."
+            "db > Executed.",
+            "db > Need to implement searching an internal node"
         ])
     end
 
