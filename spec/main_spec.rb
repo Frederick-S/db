@@ -70,7 +70,7 @@ describe "database" do
 
         result = run_script(script)
 
-        expect(result[-2]).to match_array([
+        expect(result.last(2)).to match_array([
             "db > Executed."
         ])
     end
